@@ -42,11 +42,11 @@ export interface CV {
   interface Work {
     name: string
     position: string
-    url: string
+    url?: string
     startDate: DateStr
     endDate: DateStr | null
     summary: string
-    highlights: Highlight
+    highlights?: Highlight
   }
   
   type DateStr = `${string}-${string}-${string}`
@@ -91,13 +91,13 @@ export interface CV {
   
   interface Education {
     institution: string
-    url: string
+    url?: string
     area: string
-    studyType: string
+    studyType?: string
     startDate: DateStr
-    endDate: DateStr
-    score: string
-    courses: Array<string>
+    endDate?: DateStr | null
+    score?: string
+    courses?: Array<string>
   }
   
   interface Languages {

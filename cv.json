@@ -1,116 +1,278 @@
-
-
+{
+  "basics": {
+    "name": "Michael Taboada",
+    "label": "Ingeniero de Sistemas y Ciencias de Datos | Desarrollador Full Stack",
+    "image": "/yo.webp",
+    "email": "mtaboada@utb.edu.co",
+    "phone": "+57 3108705396",
+    "url": "https://github.com/MichaelTaboada2003",
+    "summary": "Ingeniero de Sistemas y Computación por la Universidad Tecnológica de Bolívar, cursando la doble titulación en Ciencias de Datos. Desarrollador Full Stack en Zenoex con experiencia en React, Next.js, Astro, Node.js y Python. Especializado en construir aplicaciones web de alto rendimiento e integrar modelos de Machine Learning y visión computacional para resolver problemas reales con impacto medible.",
+    "location": {
+      "address": "",
+      "postalCode": "",
+      "city": "Cartagena",
+      "countryCode": "CO",
+      "region": "Bolívar"
+    },
+    "profiles": [
       {
-        "basics": {
-          "name": "Michael Taboada",
-          "label": "Ingeniero de Sistemas y Computación y Científico de Datos",
-          "image": "https://i.postimg.cc/Bn7d4BW5/photo1710475066.jpg",
-          "email": "narutosaga00@gmail.com",
-          "phone": "+57 3108705396",
-          "summary": "Estudiante de octavo semestre ingeniería de sistemas y computación, y empezando Ciencias de Datos, en la Universidad Tecnologica de Bolívar, con conocimientos en desarrollo web y arquitectura de software.",
-          "location": {
-            "city": "Turbaco",
-            "countryCode": "CO",
-            "region": "Bolivar"
-          },
-          "profiles": [
-            {
-              "network": "LinkedIn",
-              "username": "Michael Taboada",
-              "url": "https://www.linkedin.com/in/michael-taboada-naranjo-0263171b1/"
-            },
-            {
-              "network": "GitHub",
-              "username": "MichaelTaboada2003",
-              "url": "https://github.com/MichaelTaboada2003"
-            }
-          ]
-        },
-        "work": [
-          {
-            "name": "Próximamente...",
-            "position": "",
-            "startDate": "",
-            "endDate": "",
-            "summary": ""
-          }
-        ],
-        "education": [{
-          "institution": "Universidad Tecnologica de Bolívar",
-          "area": "Ingeniero de Sistemas y Computación y Ciencias de Datos",
-          "startDate": "2020-02-29",
-          "endDate": null
-        }],
-        "skills": [
-          {
-            "name": "HTML",
-            "keywords": [
-              "Desarrollo Web", "Frontend"
-            ]
-          },
-          {
-            "name": "CSS",
-            "keywords": [
-              "Desarrollo Web", "Frontend", "Diseño Responsive"
-            ]
-          },
-          {
-            "name": "JavaScript",
-            "keywords": [
-              "Desarrollo Web", "Frontend", "Backend", "Fullstack"
-            ]
-          },
-          {
-            "name": "React",
-            "keywords": [
-              "Desarrollo Web", "Frontend", "JavaScript Library", "UI"
-            ]
-          },
-          {
-            "name": "Tailwind",
-            "keywords": [
-              "Desarrollo Web", "Frontend", "CSS Framework", "Diseño Responsive"
-            ]
-          },
-          {
-            "name": "Git",
-            "keywords": [
-              "Control de Versiones", "Colaboración", "Código Fuente"
-            ]
-          },
-          {
-            "name": "GitHub",
-            "keywords": [
-              "Control de Versiones", "Colaboración", "Código Fuente", "Git"
-            ]
-          },
-          
-          {
-            "name": "Python",
-            "keywords": [
-              "Investigación", "Backend", "Ciencia de Datos", "Machine Learning"
-            ]
-          },
-          {
-            "name": "MongoDB",
-            "keywords": [
-              "Investigación", "Backend", "Ciencia de Datos", "Almacenamiento"
-            ]
-          }
-        ],
-        "projects": [
-          {
-            "name": "Generador de catálogos automáticos",
-            "isActive": true,
-            "description": "Genera PDFs de catálogos de productos de forma automática basado en una plantilla",
-            "highlights": [
-              "Crea tus propios catálogos",
-              "Automatiza la creación de catálogos"
-            ],
-            "url": "https://github.com/MichaelTaboada2003/Generador-de-Catalogos-Version-Publica",
-            "github": "https://github.com/MichaelTaboada2003/Generador-de-Catalogos-Version-Publica"
-          }
-        ]
+        "network": "LinkedIn",
+        "username": "Michael Taboada",
+        "url": "https://www.linkedin.com/in/michael-andrés-taboada-naranjo-0263171b1"
+      },
+      {
+        "network": "GitHub",
+        "username": "MichaelTaboada2003",
+        "url": "https://github.com/MichaelTaboada2003"
       }
-
-  
+    ]
+  },
+  "work": [
+    {
+      "name": "Zenoex",
+      "position": "Desarrollador Full Stack",
+      "url": "https://zenoex.co",
+      "startDate": "2024-01-01",
+      "endDate": null,
+      "summary": "Desarrollo de aplicaciones web de punta a punta con React, Next.js, Astro y Node.js. Arquitectura de interfaces responsivas y servicios backend escalables.",
+      "highlights": ["React", "Next.js", "Astro", "TypeScript"]
+    },
+    {
+      "name": "Labvantage Latam",
+      "position": "Intern, Professional Services (PSO)",
+      "url": "https://www.labvantage.com",
+      "startDate": "2025-08-01",
+      "endDate": "2025-12-31",
+      "summary": "Implementación, configuración y soporte de sistemas LIMS (Laboratory Information Management System) para clientes corporativos de la región latinoamericana.",
+      "highlights": ["LIMS", "SQL", "Java"]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Universidad Tecnológica de Bolívar",
+      "url": "https://www.utb.edu.co",
+      "area": "Doble titulación en Ciencias de Datos",
+      "studyType": "Doble titulación",
+      "startDate": "2024-01-01",
+      "endDate": null
+    },
+    {
+      "institution": "Universidad Tecnológica de Bolívar",
+      "url": "https://www.utb.edu.co",
+      "area": "Ingeniería de Sistemas y Computación",
+      "studyType": "Título profesional",
+      "startDate": "2021-01-01",
+      "endDate": "2025-12-15"
+    }
+  ],
+  "skills": [
+    {
+      "name": "React",
+      "keywords": ["Desarrollo Web", "Frontend", "UI"]
+    },
+    {
+      "name": "Next.js",
+      "keywords": ["Desarrollo Web", "Fullstack", "React"]
+    },
+    {
+      "name": "Astro",
+      "keywords": ["Desarrollo Web", "Frontend", "Performance"]
+    },
+    {
+      "name": "TypeScript",
+      "keywords": ["Frontend", "Backend", "Fullstack"]
+    },
+    {
+      "name": "FastAPI",
+      "keywords": ["Backend", "APIs REST", "Microservicios"]
+    },
+    {
+      "name": "Flask",
+      "keywords": ["Backend", "APIs", "Python"]
+    },
+    {
+      "name": "Rust",
+      "keywords": ["Sistemas", "Alto Rendimiento", "Tauri"]
+    },
+    {
+      "name": "Tailwind",
+      "keywords": ["Desarrollo Web", "Frontend", "CSS Framework"]
+    },
+    {
+      "name": "Supabase",
+      "keywords": ["BaaS", "PostgreSQL", "Autenticación"]
+    },
+    {
+      "name": "PostgreSQL",
+      "keywords": ["Base de Datos", "SQL", "Relacional"]
+    },
+    {
+      "name": "MongoDB",
+      "keywords": ["Base de Datos", "NoSQL", "Documentos"]
+    },
+    {
+      "name": "Docker",
+      "keywords": ["DevOps", "Contenedores", "Infraestructura"]
+    },
+    {
+      "name": "Vue",
+      "keywords": ["Desarrollo Web", "Frontend", "UI"]
+    },
+    {
+      "name": "Three.js",
+      "keywords": ["Frontend", "3D", "WebGL"]
+    },
+    {
+      "name": "Git",
+      "keywords": ["Control de Versiones", "Colaboración"]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Networking App",
+      "isActive": true,
+      "description": "Aplicación web para gestión de contactos profesionales y networking con +55 usuarios activos. Incluye autenticación segura con Supabase, dashboard personalizado con métricas, recomendaciones dinámicas basadas en IA (Groq) y exportación multiformato.",
+      "highlights": [
+        "React",
+        "Tailwind",
+        "Supabase",
+        "Groq",
+        "+55 usuarios"
+      ],
+      "url": "https://networking-livid.vercel.app/"
+    },
+    {
+      "name": "Central de Ejecución",
+      "isActive": true,
+      "description": "Aplicación de escritorio local-first construida con Tauri v2, Rust y React 19 para registrar, supervisar y mantener proyectos de desarrollo. Incluye panel de control Git/GitHub en tiempo real (Pull, Push, Commit), bóveda SQLite para variables de entorno protegidas y ejecución de procesos en segundo plano con logs en vivo.",
+      "highlights": [
+        "Rust",
+        "Tauri",
+        "React",
+        "TypeScript",
+        "SQLite"
+      ],
+      "url": "https://github.com/MichaelTaboada2003/central-ejecucion",
+      "github": "https://github.com/MichaelTaboada2003/central-ejecucion"
+    },
+    {
+      "name": "Dev Command Center",
+      "isActive": true,
+      "description": "Suite de herramientas y servidor Model Context Protocol (MCP) integrado para permitir a asistentes y agentes autónomos de IA (Claude, Codex, Antigravity) inspeccionar el espacio de trabajo, orquestar servidores de desarrollo y sincronizar variables de entorno de forma segura por stdio.",
+      "highlights": [
+        "TypeScript",
+        "Protocolo MCP",
+        "Automatización",
+        "IA Agents"
+      ],
+      "url": "https://github.com/MichaelTaboada2003/central-ejecucion/tree/main/mcp",
+      "github": "https://github.com/MichaelTaboada2003/central-ejecucion"
+    },
+    {
+      "name": "EmotiSpeech — Clasificador de Emociones",
+      "isActive": true,
+      "description": "Aplicación web de IA emocional y toma de decisiones para atención al cliente. Clasifica emociones en audio mediante fine-tuning sobre wav2vec2 (balanced acc 0.86) y simula el impacto financiero con Monte Carlo (2.000 escenarios) para justificar el despliegue con VPN mensual.",
+      "highlights": [
+        "FastAPI",
+        "Flask",
+        "wav2vec2",
+        "scikit-learn",
+        "Monte Carlo"
+      ],
+      "url": "https://github.com/MichaelTaboada2003/audio-ml-classifier",
+      "github": "https://github.com/MichaelTaboada2003/audio-ml-classifier"
+    },
+    {
+      "name": "A World Away - NASA 2025",
+      "isActive": false,
+      "description": "Proyecto desarrollado para el NASA Space Apps Challenge 2025. Exploración interactiva de exoplanetas y visualización 3D de sistemas estelares basada en datos científicos reales de la NASA con predicción de habitabilidad con IA.",
+      "highlights": [
+        "Vue",
+        "Three.js",
+        "Groq",
+        "NASA 2025"
+      ],
+      "url": "https://a-world-away-nasa2025-web.vercel.app/es-ES",
+      "github": "https://github.com/MichaelTaboada2003/AWorldAway_Nasa2025"
+    },
+    {
+      "name": "Music Lab",
+      "isActive": false,
+      "description": "Estación integral de producción musical con reproductor HD reactivo a 60 FPS (Web Audio API + Canvas 2D), sincronización de karaoke y alineación forzada por IA (Whisper + Demucs) y generación de videos dinámicos para redes sociales.",
+      "highlights": [
+        "FastAPI",
+        "PyTorch",
+        "Whisper AI",
+        "Demucs",
+        "FFmpeg"
+      ],
+      "url": "https://github.com/MichaelTaboada2003/music-lab",
+      "github": "https://github.com/MichaelTaboada2003/music-lab"
+    },
+    {
+      "name": "Sensado y Modelado de Sistemas Físicos",
+      "isActive": false,
+      "description": "Hub académico que centraliza 5 laboratorios interactivos con arquitectura cliente-servidor: estimación de gravedad con visión computacional (OpenCV HSV), coeficiente de restitución en video, análisis FFT de péndulo e imágenes satelitales Sentinel-2.",
+      "highlights": [
+        "FastAPI",
+        "React",
+        "OpenCV",
+        "scikit-learn",
+        "Sentinel-2"
+      ],
+      "url": "https://github.com/MichaelTaboada2003/physics-sensing-automation",
+      "github": "https://github.com/MichaelTaboada2003/physics-sensing-automation"
+    },
+    {
+      "name": "Shainy",
+      "isActive": false,
+      "description": "Plataforma e-commerce completa con panel de administración, sincronización en tiempo real con Google Sheets, catálogo dinámico de productos y checkout automatizado vía WhatsApp.",
+      "highlights": [
+        "Next.js",
+        "Supabase",
+        "Tailwind",
+        "TypeScript",
+        "WhatsApp Checkout"
+      ],
+      "url": "https://github.com/MichaelTaboada2003"
+    },
+    {
+      "name": "Gym Tracker",
+      "isActive": false,
+      "description": "Aplicación móvil desarrollada con React Native y Expo para seguimiento detallado de entrenamientos en el gimnasio: registro de series, repeticiones, peso, estadísticas de progreso y persistencia offline.",
+      "highlights": [
+        "React",
+        "TypeScript",
+        "Mobile",
+        "AsyncStorage"
+      ],
+      "url": "https://github.com/MichaelTaboada2003/gym-tracker",
+      "github": "https://github.com/MichaelTaboada2003/gym-tracker"
+    },
+    {
+      "name": "Exosky - NASA Space Apps 2024",
+      "isActive": false,
+      "description": "Visualizador astronómico interactivo en 3D que permite explorar cómo se vería el cielo nocturno desde la superficie de diferentes exoplanetas a partir de un catálogo de más de 100,000 estrellas y cálculos de coordenadas estelares.",
+      "highlights": [
+        "React",
+        "Three.js",
+        "FastAPI",
+        "NASA 2024"
+      ],
+      "url": "https://github.com/MichaelTaboada2003/Exosky-Nasa-Space-App-2024",
+      "github": "https://github.com/MichaelTaboada2003/Exosky-Nasa-Space-App-2024"
+    },
+    {
+      "name": "Novenas 2025",
+      "isActive": false,
+      "description": "Aplicación web interactiva para el seguimiento de asistencias, gestión de participantes y dinámicas de las tradicionales Novenas navideñas con asistencia de inteligencia artificial y calendario interactivo.",
+      "highlights": [
+        "Next.js",
+        "Tailwind",
+        "TypeScript",
+        "IA"
+      ],
+      "url": "https://github.com/MichaelTaboada2003"
+    }
+  ]
+}
