@@ -1,65 +1,86 @@
 ---
-import Section from '../Section.astro'
+import Section from "../Section.astro"
 
 import Git from "@/icons/Git.astro"
-import GitHub from "@/icons/Github.astro"
-import Python from "@/icons/Python.astro"
 import Tailwind from "@/icons/Tailwind.astro"
 import MongoDB from "@/icons/MongoDB.astro"
 import React from "@/icons/React.astro"
-import CSS from "@/icons/CSS.astro"
-import JavaScript from "@/icons/JavaScript.astro"
-import HTML from "@/icons/Html.astro"
+import TypeScript from "@/icons/TypeScript.astro"
+import Nextjs from "@/icons/Nextjs.astro"
+import AstroIcon from "@/icons/AstroIcon.astro"
+import Supabase from "@/icons/Supabase.astro"
+import FastAPI from "@/icons/FastAPI.astro"
+import Flask from "@/icons/Flask.astro"
+import Vue from "@/icons/Vue.astro"
+import Threejs from "@/icons/Threejs.astro"
+import Docker from "@/icons/Docker.astro"
+import Rust from "@/icons/Rust.astro"
+import PostgreSQL from "@/icons/PostgreSQL.astro"
 
-
-import { skills } from '@cv'
+import { skills } from "@cv"
 
 const SKILLS_ICONS: Record<string, any> = {
   Git,
-  GitHub,
-  Python,
   Tailwind,
   MongoDB,
   React,
-  CSS,
-  JavaScript,
-  HTML
+  TypeScript,
+  "Next.js": Nextjs,
+  Astro: AstroIcon,
+  Supabase,
+  FastAPI,
+  Flask,
+  Vue,
+  "Three.js": Threejs,
+  Docker,
+  Rust,
+  PostgreSQL
 }
 ---
 
 <Section title="Habilidades">
-    <ul>
-      {
-        skills.map(({ name }) => {
-          const iconName = name
-          const Icon = SKILLS_ICONS[iconName]
-  
-          return (
-            <li>
-              {Icon && <Icon />} <span>{name}</span>
-            </li>
-          )
-        })
-      }
-    </ul>
-  </Section>
-  
-  <style>
-    ul {
-      display: inline-flex;
-      gap: 8px;
-      flex-wrap: wrap;
+  <ul>
+    {
+      skills.map(({ name }) => {
+        const Icon = SKILLS_ICONS[name]
+
+        return (
+          <li>
+            {Icon && <Icon />} <span>{name}</span>
+          </li>
+        )
+      })
     }
-  
-    li {
-      align-items: center;
-      background: #eee;
-      border-radius: 6px;
-      color: black;
-      display: flex;
-      font-size: 0.8rem;
-      font-weight: 500;
-      gap: 4px;
-      padding: 0.2rem 0.6rem;
-    }
-  </style>
+  </ul>
+</Section>
+
+<style>
+  ul {
+    display: inline-flex;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  li {
+    align-items: center;
+    background: #eee;
+    border-radius: 6px;
+    color: #111;
+    display: flex;
+    font-size: 0.8rem;
+    font-weight: 500;
+    gap: 6px;
+    padding: 0.25rem 0.65rem;
+    transition: background 0.15s ease;
+  }
+
+  li:hover {
+    background: #e2e2e2;
+  }
+
+  li :global(svg) {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+  }
+</style>

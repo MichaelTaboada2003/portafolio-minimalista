@@ -6,10 +6,10 @@ import { education } from "@cv"
 <Section title="Educación">
   <ul>
     {
-      education.map(({ institution, startDate, endDate, area }) => {
+      education.map(({ institution, startDate, endDate, area, studyType, url }) => {
         const startYear = new Date(startDate).getFullYear()
         const endYear =
-          endDate != null ? new Date(endDate).getFullYear() : "Actual"
+          endDate != null ? new Date(endDate).getFullYear() : "Presente"
         const years = `${startYear} - ${endYear}`
 
         return (
@@ -17,7 +17,15 @@ import { education } from "@cv"
             <article>
               <header>
                 <div>
-                  <h3>{institution}</h3>
+                  <h3>
+                    {url ? (
+                      <a href={url} target="_blank" rel="noopener noreferrer" title={`Visitar ${institution}`}>
+                        {institution}
+                      </a>
+                    ) : (
+                      institution
+                    )}
+                  </h3>
                 </div>
 
                 <time>{years}</time>
@@ -25,6 +33,7 @@ import { education } from "@cv"
 
               <footer>
                 <p>{area}</p>
+                {studyType && <span class="study-type">{studyType}</span>}
               </footer>
             </article>
           </li>
@@ -38,12 +47,20 @@ import { education } from "@cv"
   ul {
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    gap: 28px;
   }
 
   article h3 {
     font-weight: 500;
     color: #111;
+  }
+
+  article h3 a {
+    color: #111;
+  }
+
+  article h3 a:hover {
+    text-decoration: underline;
   }
 
   header {
@@ -57,6 +74,19 @@ import { education } from "@cv"
     color: #555;
     font-size: 0.85rem;
     min-width: 102px;
+    text-align: right;
+  }
+
+  footer p {
+    color: #333;
+    font-size: 0.85rem;
+  }
+
+  .study-type {
+    display: inline-block;
+    margin-top: 4px;
+    font-size: 0.7rem;
+    color: #666;
   }
 
   @media (width <= 700px) {

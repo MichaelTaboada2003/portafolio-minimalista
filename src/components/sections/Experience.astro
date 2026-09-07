@@ -1,71 +1,136 @@
 ---
 import Section from "../Section.astro"
-
 import { work } from "@cv"
+
+const formatPeriod = (startDate: string, endDate: string | null) => {
+  if (!startDate) return ""
+  const start = new Date(startDate)
+  const startYear = start.getFullYear()
+
+  if (!endDate) {
+    return `${startYear} - Presente`
+  }
+
+  const end = new Date(endDate)
+  const endYear = end.getFullYear()
+
+  if (startYear === endYear) {
+    const startMonth = start.toLocaleDateString("es-ES", { month: "short" })
+    const endMonth = end.toLocaleDateString("es-ES", { month: "short" })
+    const cap = (s: string) => s.charAt(0).toUpperCase() + s.slice(1)
+    return `${cap(startMonth)} ${startYear} - ${cap(endMonth)} ${endYear}`
+  }
+
+  return `${startYear} - ${endYear}`
+}
 ---
 
 <Section title="Experiencia laboral">
-    <ul>
-        {
-        work.map(
-        ({ name, startDate, endDate, position, summary}) => {
+  <ul>
+    {
+      work.map(({ name, startDate, endDate, position, summary, url, highlights }) => {
+        const period = formatPeriod(startDate, endDate)
+        return (
+          <li>
+            <article>
+              <header>
+                <div>
+                  <h3>
+                    {url ? (
+                      <a href={url} target="_blank" rel="noopener noreferrer" title={`Visitar ${name}`}>
+                        {name}
+                      </a>
+                    ) : (
+                      name
+                    )}
+                  </h3>
+                  <h4>{position}</h4>
+                </div>
+                <time>{period}</time>
+              </header>
 
-            const startYear = new Date(startDate).getFullYear()
-            const endYear = endDate != null ? new Date(endDate).getFullYear() : "Actual"
-            const years = `${startYear} - ${endYear}`
-            return (
-            <li >
-                <article>
-                    <header>
-                        <div> 
-                            <h3>{name}</h3>
-                            <h4>{position}</h4>
-                    </div>
-                    <time>
-                        {years}
-                    </time>
-                    </header>
-
-                   <footer>
-                    <p>{summary}</p>
-                    </footer> 
-                    
-                </article>
-            </li>)
-        })
-        
-        }
-    </ul>
+              <footer>
+                <p>{summary}</p>
+                {highlights && highlights.length > 0 && (
+                  <div class="badges">
+                    {highlights.map((item) => (
+                      <span>{item}</span>
+                    ))}
+                  </div>
+                )}
+              </footer>
+            </article>
+          </li>
+        )
+      })
+    }
+  </ul>
 </Section>
 
 <style>
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
 
-    ul {
-        display: flex;
-        flex-direction: column;
-        gap: 32px;
-    }
+  article h3 {
+    font-weight: 500;
+    color: #111;
+  }
 
-    article h3 {
-        font-weight: 500;
-        color: #111;
-    }
+  article h3 a {
+    color: #111;
+  }
 
-    article h4 {
-        color: #222;
-        font-weight: 400;
-    }
+  article h3 a:hover {
+    text-decoration: underline;
+  }
 
-    header{
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        margin-bottom: 4px;
-    }
+  article h4 {
+    color: #333;
+    font-weight: 400;
+    margin-top: 2px;
+  }
 
-    time {
-        font-size: 0.85rem;
-        color: #555;
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 6px;
+  }
+
+  time {
+    font-size: 0.85rem;
+    color: #555;
+    white-space: nowrap;
+    margin-left: 1rem;
+  }
+
+  footer p {
+    margin-bottom: 8px;
+  }
+
+  .badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin-top: 6px;
+  }
+
+  .badges span {
+    border-radius: 6px;
+    background: #f2f2f2;
+    color: #444;
+    font-size: 0.65rem;
+    font-weight: 500;
+    padding: 0.15rem 0.5rem;
+  }
+
+  @media print {
+    .badges span {
+      border: 1px solid #ddd;
+      background: transparent;
     }
-        
+  }
 </style>
